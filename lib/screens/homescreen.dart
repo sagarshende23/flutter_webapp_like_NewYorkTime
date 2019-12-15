@@ -19,7 +19,7 @@ class _HomeScreenState extends State<HomeScreen> {
 
   _fetchArticles() async {
     List<Article> articles =
-        await APIService().fetchArticleBYSection('technology');
+        await APIService().fetchArticleBYSection('food');
     setState(() {
       _articles = articles;
     });
